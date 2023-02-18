@@ -18,7 +18,7 @@ logstash_conf="/usr/share/logstash/config"
 logstash_json_conf="stdin-dcr-sentinel-sample.conf"
 logstash_pipeline="/usr/share/logstash/pipeline"
 apache2Log="apache2_accesslog_entry.txt"
-container="logstash_azure_dcr"
+container="logstash_azure_dcr"  # docker image ls
 
 
 echo -e "\e[32m\nGenerating Apache2 Log entry in JSON format for Data Collection Rule Transformation\e[0m"
