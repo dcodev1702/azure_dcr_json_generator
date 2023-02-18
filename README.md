@@ -17,12 +17,24 @@ Assumptions:
 
 Instructions:
 --------------
-```console git clone https://github.com/dcodev1702/azure_dcr_json_generator.git``` <br />
-```console cd into cloned repository``` <br />
-```console docker build -t logstash_azure_dcr .``` <br />
-```console mkdir -p $(pwd)/tmp``` <br />
-```console chmod 755 generate_json_for_dcr_docker.sh``` <br />
-```console ./generate_json_for_dcr_docker.sh``` <br />
+```console 
+git clone https://github.com/dcodev1702/azure_dcr_json_generator.git
+```
+```console 
+cd into cloned repository
+```
+```console 
+docker build -t logstash_azure_dcr .
+```
+```console 
+mkdir -p $(pwd)/tmp
+```
+```console 
+chmod 755 generate_json_for_dcr_docker.sh
+```
+```console 
+./generate_json_for_dcr_docker.sh
+```
 
 Post Condition:
 ----------------
