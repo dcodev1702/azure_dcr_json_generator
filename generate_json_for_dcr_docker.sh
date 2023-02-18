@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ################################################################################
-#
 # Author: dcodev1702
 # Date: 02.18.2023
 # Purpose: Basic shell script to:
@@ -11,6 +10,14 @@
 #     format so DCR transformation, using Docker
 #  -- Display (cat) Logstash Sentinel DCR files in JSON
 #
+#  Usage:
+#  ---------
+#  ./generate_json_for_dcr_docker.sh 
+#     (Sets RM_JSON_FLAG=0 which will not delete existing JSON files stored in ./tmp)
+#
+#  ./generate_json_for_dcr_docker.sh 1 
+#     (Sets RM_JSON_FLAG=1 which will delete existing JSON files stored in ./tmp)
+#
 ###############################################################################
 
 logstash_dir="/tmp/logstash"
@@ -19,11 +26,11 @@ logstash_json_conf="stdin-dcr-sentinel-sample.conf"
 logstash_pipeline="/usr/share/logstash/pipeline"
 apache2Log="apache2_accesslog_entry.txt"
 container="temp_logstash"
+RM_JSON_FLAG=0
 
 
-if [ "$#" -eq 0 ]; then
-   RM_JSON_FLAG=0
-else
+# This sets the RM_JSON_FLAG if '1' is passed in via the cli -> ./generate_json_dcr_docker.sh 1
+if [ "$#" -eq 1 ] && [ "$@" -eq 1 ]; then
    RM_JSON_FLAG=1
 fi
 
