@@ -3,8 +3,8 @@ A dockerized solution to generate Azure Data Collection Rule (DCR) JSON Sample F
 
 Cited Resources:
 -----------------
-[Microsoft DCR Tutorial:](/https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal)
-[Medium DCR Tutorial:](/https://koosg.medium.com/ingest-dcr-based-custom-logs-in-microsoft-sentinel-with-logstash-f94c79e69b93)
+[Microsoft DCR Tutorial:](/https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal) <br />
+[Medium DCR Tutorial:](/https://koosg.medium.com/ingest-dcr-based-custom-logs-in-microsoft-sentinel-with-logstash-f94c79e69b93) <br />
 
 
 Assumptions:
