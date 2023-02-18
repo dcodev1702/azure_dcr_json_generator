@@ -28,9 +28,6 @@ cd azure_dcr_json_generator
 docker build -t logstash_azure_dcr .
 ```
 ```console 
-mkdir -p $(pwd)/tmp
-```
-```console 
 chmod 755 generate_json_for_dcr_docker.sh
 ```
 ```console 
