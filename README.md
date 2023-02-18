@@ -17,15 +17,15 @@ Assumptions:
 
 Instructions:
 --------------
-git clone https://github.com/dcodev1702/azure_dcr_json_generator.git
-cd into cloned repository
-docker build -t logstash_azure_dcr .
-mkdir -p $(pwd)/tmp
-chmod 755 generate_json_for_dcr_docker.sh
-./generate_json_for_dcr_docker.sh
+git clone https://github.com/dcodev1702/azure_dcr_json_generator.git <br />
+cd into cloned repository <br />
+docker build -t logstash_azure_dcr .  <br />
+mkdir -p $(pwd)/tmp <br />
+chmod 755 generate_json_for_dcr_docker.sh <br />
+./generate_json_for_dcr_docker.sh <br />
 
 
 Post Condition:
 ----------------
-The sample file: e.g. sampleFilexxxxxxxxxx.json will be in $(pwd)/tmp
-You can use this file when creating a Custom Log via DCR at the transformation stage
+The sample file: e.g. sampleFilexxxxxxxxxx.json will be in $(pwd)/tmp <br />
+You can use this file when creating a Custom Log via DCR at the transformation stage <br />
