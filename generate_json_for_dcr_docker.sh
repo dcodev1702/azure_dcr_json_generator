@@ -3,15 +3,12 @@
 ################################################################################
 #
 # Author: dcodev1702
-# Date: 02.17.2023
+# Date: 02.18.2023
 # Purpose: Basic shell script to:
-#  -- Check if Logstash is installed on system
-#  -- Check if Microsoft Logstash Sentinel DCR Output Plugin is installed
-#  -- Setup necessary directories -> /tmp/logstash
-#  -- Copy STD|JSON logstash pipeline conf to /etc/logstash/conf.d/
+#  -- Map STD|JSON logstash pipeline conf to /usr/share/logstash/pipeline/
+#  -- Map config files used by Logstash
 #  -- Run logstash command to convert unstructured log entry to JSON 
-#     format so DCR transformation can take place
-#  -- Remove STDIN/JSON logstash pipeline file from /etc/logstash/conf.d/
+#     format so DCR transformation, using Docker
 #  -- Display (cat) Logstash Sentinel DCR files in JSON
 #
 ###############################################################################
