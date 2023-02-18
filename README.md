@@ -17,10 +17,10 @@ Assumptions:
 
 Instructions:
 --------------
-```bash 
+```shell
 git clone https://github.com/dcodev1702/azure_dcr_json_generator.git
 ```
-```console 
+```bash
 cd into cloned repository
 ```
 ```console 
