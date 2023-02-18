@@ -19,7 +19,16 @@ logstash_json_conf="stdin-dcr-sentinel-sample.conf"
 logstash_pipeline="/usr/share/logstash/pipeline"
 apache2Log="apache2_accesslog_entry.txt"
 container="logstash_azure_dcr"  # docker image ls
+RM_JSON_FLAG='0'
 
+# Create /tmp directory for sample JSON file (output)
+echo -e "\e[32m\nCreating tmp directory where the sample JSON file will reside\e[0m\n"
+if [ -d "$(pwd)/tmp" ]; then
+   echo -e "tmp directory already exists! Removing old JSON sample files...\n"
+else
+   mkdir -p -v "$(pwd)/tmp"
+   echo -e "\033[33m$(pwd)/tmp directory successfully created..\033[0m\n"
+fi
 
 echo -e "\e[32m\nGenerating Apache2 Log entry in JSON format for Data Collection Rule Transformation\e[0m"
 
