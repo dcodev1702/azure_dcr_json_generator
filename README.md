@@ -4,8 +4,8 @@ An Apache2 Access log is used in this example. Limited testing has been done wit
 
 Cited Resources:
 -----------------
-[Microsoft Azure DCR API Tutorial:](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal) <br />
-[Medium Azure DCR API Tutorial:](https://koosg.medium.com/ingest-dcr-based-custom-logs-in-microsoft-sentinel-with-logstash-f94c79e69b93) <br />
+[Microsoft: Azure DCR API Tutorial](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/tutorial-logs-ingestion-portal) <br />
+[Medium: Azure DCR API Tutorial](https://koosg.medium.com/ingest-dcr-based-custom-logs-in-microsoft-sentinel-with-logstash-f94c79e69b93) <br />
 
 
 Assumptions:
