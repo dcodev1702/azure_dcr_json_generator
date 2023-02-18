@@ -17,11 +17,11 @@ Assumptions:
 
 Instructions:
 --------------
-```shell
+```console
 git clone https://github.com/dcodev1702/azure_dcr_json_generator.git
 ```
-```bash
-cd into cloned repository
+```console
+cd azure_dcr_json_generator
 ```
 ```console 
 docker build -t logstash_azure_dcr .
