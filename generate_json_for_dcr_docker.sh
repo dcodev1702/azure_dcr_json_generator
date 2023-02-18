@@ -21,7 +21,7 @@ logstash_conf="/usr/share/logstash/config"
 logstash_json_conf="stdin-dcr-sentinel-sample.conf"
 logstash_pipeline="/usr/share/logstash/pipeline"
 apache2Log="apache2_accesslog_entry.txt"
-container="temp_logstash"
+container="logstash_azure_dcr"
 
 
 echo -e "\e[32m\nGenerating Apache2 Log entry in JSON format for Data Collection Rule Transformation\e[0m"
@@ -40,7 +40,7 @@ echo -e "\033[33mUpload this JSON file to DCR Transformation Editor in order to 
 # Define the path to the directory containing the files
 JSONFileDirectory="$(pwd)/tmp"
 
-# Loop over the files in the directory
+# Loop over the JSON files and display contents to STDOUT
 for file in "$JSONFileDirectory"/*
 do
   # Check if the file is a regular file (not a directory or a symlink)
