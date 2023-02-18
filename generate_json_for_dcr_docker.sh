@@ -5,6 +5,7 @@
 # Author: dcodev1702
 # Date: 02.18.2023
 # Purpose: Basic shell script to:
+#  -- Create tmp directory in the present working directory (pwd)
 #  -- Map STD|JSON logstash pipeline conf to /usr/share/logstash/pipeline/
 #  -- Map config files used by Logstash
 #  -- Run logstash command to convert unstructured log entry to JSON 
