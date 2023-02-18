@@ -36,6 +36,10 @@ chmod 755 generate_json_for_dcr_docker.sh
 ```console 
 ./generate_json_for_dcr_docker.sh
 ```
+If you want to delete existing sample JSON files stored in ./tmp do the following <br />
+```console
+./generate_json_for_dcr_docker.sh 1
+```
 
 Post Condition:
 ----------------
