@@ -1,5 +1,5 @@
 # Azure DCR JSON Generator using Docker
-A dockerized solution to generate Azure Data Collection Rule (DCR) JSON Sample Files from unstructured logs <br />
+A dockerized solution to generate Azure Data Collection Rule (DCR) JSON Sample Files from unstructured logs. <br />
 An Apache2 Access log is used in this example. Limited testing has been done with single line log entries (Bind9 DNS & Apache2).
 
 Cited Resources:
