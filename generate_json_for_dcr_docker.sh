@@ -48,7 +48,7 @@ else
 fi
 
 
-echo -e "\e[32m\nGenerating Apache2 Log entry in JSON format for Data Collection Rule Transformation\e[0m"
+echo -e "\e[32m\nGenerating Apache2 Log entry in JSON for Data Collection Rule Transformation\e[0m"
 
 # This command generates the JSON output from an Apache2 Log entry and stores the file in ./tmp/logstash
 cat ./$apache2Log | docker run -i --rm --cpus="2.0" \
