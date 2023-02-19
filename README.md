@@ -44,4 +44,4 @@ If you want to delete existing sample JSON files stored in ./tmp do the followin
 Post Condition:
 ----------------
 The sample file: e.g. sampleFilexxxxxxxxxx.json will be in $(pwd)/tmp <br />
-You can use this file when creating a Custom Log via DCR at the KQL transformation stage <br />
+You can use this file when creating a Custom Log in Log Analytics via DCR API at the KQL transformation stage <br />
