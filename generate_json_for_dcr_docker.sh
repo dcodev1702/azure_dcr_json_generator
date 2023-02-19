@@ -30,7 +30,7 @@ RM_JSON_FLAG=0
 
 
 # This sets the RM_JSON_FLAG if '1' is passed in via the cli -> ./generate_json_dcr_docker.sh 1
-if [ "$#" -eq 1 ] && [ "$@" -eq 1 ]; then
+if [ "$#" -eq 1 ] && [ "$@" = 1 ]; then
    RM_JSON_FLAG=1
 fi
 
