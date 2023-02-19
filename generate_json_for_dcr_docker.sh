@@ -35,11 +35,12 @@ if [ "$#" -eq 1 ] && [ "$@" = 1 ]; then
 fi
 
 # Create ./tmp directory for sample JSON file (output)
+# If RM_JSON_FLAG=1, delete all JSON files currently in ./tmp
 echo -e "\e[32m\nCreating tmp directory where the sample JSON file will reside\e[0m"
 if [ -d "$(pwd)/tmp" ]; then
    echo -e "$(pwd)/tmp directory already exists\n"
 
-   if [ $RM_JSON_FLAG -eq 1 ]; then
+   if [ $RM_JSON_FLAG = 1 ]; then
       sudo rm -rfv ./tmp/*.json
    fi
 else
