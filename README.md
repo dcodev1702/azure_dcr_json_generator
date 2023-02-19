@@ -3,7 +3,7 @@ A dockerized solution using Logstash (v8.6.1) to generate Azure Data Collection 
 An Apache2 Access log is used in this example. Limited testing has been done with single line log entries (Bind9 DNS & Apache2). <br />
 <br />
 This is inspired from using a Logstash container to ship unstructured logs to Log Analytics using the Custom Table (Log) DCR API. <br /> 
-See cited resources for more information.
+See cited resources for a more detailed explanation.
 
 Cited Resources:
 -----------------
