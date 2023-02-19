@@ -25,7 +25,7 @@ logstash_conf="/usr/share/logstash/config"
 logstash_json_conf="stdin-dcr-sentinel-sample.conf"
 logstash_pipeline="/usr/share/logstash/pipeline"
 apache2Log="apache2_accesslog_entry.txt"
-container="temp_logstash"
+container="logstash_azure_dcr"
 RM_JSON_FLAG=0
 
 
