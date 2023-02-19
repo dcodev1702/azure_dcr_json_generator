@@ -37,7 +37,7 @@ fi
 # Create ./tmp directory for sample JSON file (output)
 echo -e "\e[32m\nCreating tmp directory where the sample JSON file will reside\e[0m"
 if [ -d "$(pwd)/tmp" ]; then
-   echo -e "$(pwd)/tmp directory already exists | RM_JSON_FLAG = $RM_JSON_FLAG \n"
+   echo -e "$(pwd)/tmp directory already exists\n"
 
    if [ $RM_JSON_FLAG -eq 1 ]; then
       sudo rm -rfv ./tmp/*.json
