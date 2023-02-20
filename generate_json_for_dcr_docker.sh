@@ -64,6 +64,7 @@ echo -e "\033[33mUpload this JSON file to DCR Transformation Editor in order to 
 
 # Define the path to the directory containing the files
 JSONFileDirectory="$(pwd)/tmp"
+cntr=1
 
 # Loop over the JSON files and display contents to STDOUT
 for file in "$JSONFileDirectory"/*
@@ -72,10 +73,11 @@ do
   if [ -f "$file" ]; then
 
     # Print the name of the file
-    echo -e "\e[32m\nFile: $file\e[0m"
+    echo -e "\e[32m\n[$cntr]::File: $file\e[0m"
 
-    # Output the contents of the file
+    # Output the contents of the file & increment cntr by 1
     cat "$file"; echo
+    cntr=$((cntr+1))
 
   fi
 done
