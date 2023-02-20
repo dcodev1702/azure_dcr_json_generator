@@ -53,5 +53,5 @@ See KQL_Apache2_AccessLog_Transformation.txt for an example. <br />
 ![Apache2_Logstash_Create_DCR_JSON](https://user-images.githubusercontent.com/32214072/220207309-39734a3b-1896-4e62-9337-4f2dccd0207d.jpg)
 <br />
 <br />
-The Apache2 Access Log is now parsed (transformed) at ingestion time into several different distinct and querable fields.
+The Apache2 Access Log is now parsed (transformed) at ingestion time into several different distinct and querable fields. <br />
 ![Apache2_Logstash_Create_DCR_Parsed](https://user-images.githubusercontent.com/32214072/220209620-3285f55d-95ee-478d-b021-3d5f58ed1aa3.jpg)
