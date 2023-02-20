@@ -45,3 +45,9 @@ Post Condition:
 ----------------
 The sample file: e.g. sampleFilexxxxxxxxxx.json will be in $(pwd)/tmp <br />
 You can use this file when creating a Custom Log in Log Analytics via DCR API at the KQL transformation stage <br />
+
+Below is the JSON from the sample file stored in ./tmp. Once uploaded to Log Analytrics - Custom Table (DCR) <br />
+you can write your KQL to normalize/transform the unstructured data to a structured format to your liking. <br />
+See KQL_Apache2_AccessLog_Transformation.txt for an example.
+![Apache2_Logstash_Create_DCR_JSON](https://user-images.githubusercontent.com/32214072/220207309-39734a3b-1896-4e62-9337-4f2dccd0207d.jpg)
+
