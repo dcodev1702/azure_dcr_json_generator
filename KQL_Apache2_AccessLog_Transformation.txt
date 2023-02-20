@@ -1,0 +1,5 @@
+source
+| extend TimeGenerated = ls_timestamp
+| parse message with ClientIP:string ' - - [' OrigTime:string ']' ApacheServer:string \":\" ApacheServerPort:string '\"' Method:string ' / ' Protocol:string '/' ProtocolVersion:string '\" ' StatusCode:string ' ' BytesSent:string ' \"' RefererURL:string '\" \"' UserAgent:string '\"'
+| where ClientIP != ""
+| project TimeGenerated, ClientIP, ApacheServer, ApacheServerPort, Method, Protocol, ProtocolVersion, StatusCode, BytesSent, RefererURL, UserAgent
